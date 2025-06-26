@@ -52,8 +52,7 @@ const chatLimiter = rateLimit({
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/chatbot", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  
 })
 
 const db = mongoose.connection
